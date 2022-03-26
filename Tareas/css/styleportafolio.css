@@ -162,6 +162,9 @@ ul
     left:80px;
     top: 100px;
 }
+li{
+    width: 500px;
+}
 
 .titulotaller{
     position: absolute;
@@ -207,3 +210,5 @@ footer{
     top: 130px;
     left: 15px;
 }
+
+
