@@ -6,8 +6,12 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 50px; fo
     --slate-gray: #6e7e85ff;
     --interactive: #042CBB;
     --azulclarito: #A0B5FF;
+    --azulmasclaro: #ced8fc;
 }
 
+a{
+    text-decoration: none;
+}
 body{
     font-family: 'Hind';
     background-color: var(--slate-gray);
@@ -125,14 +129,81 @@ img{
     
 }
 .datosbasicos{
+    margin-top: 100px;
     width: 50%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100px;
     align-items: center;
     font-size: 24px;
     font-weight: lighter;
     justify-content: flex-end;
+    
+}
+
+.parrafodatos{
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+/********ESTILO CARDS********/
+.carta{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin: 60px;
+    font-family: 'Hind';
+}
+.titlecards{
+    font-size: 30px;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+.carta div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+    padding: 20px;
+}
+
+.carta .front{
+    background: url(/Tareas/imgs/curso.jpg) 20% 1% / cover no-repeat;;
+    color:  white;
+    border: 3px solid white;
+    align-items: baseline;
+    justify-content: flex-end;
+    border-radius: 20px;
+    transform: perspective(500px) rotateY(0deg);
+    font-size: 35px;
+    flex-direction: column;
+}
+
+.carta .back{
+    background-color: var(--azulmasclaro);
+    border: 3px solid #B7CECE;
+    border-radius: 20px;
+    flex-direction: column;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.carta:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.carta:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+p{
+    padding: 5px;
+    font-family: 'Hind';
+    font-weight:lighter;
+    font-size: 18px;
 }
 
 
