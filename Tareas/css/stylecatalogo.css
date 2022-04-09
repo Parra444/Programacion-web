@@ -11,6 +11,7 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 50px; fo
 
 a{
     text-decoration: none;
+    color: black;
 }
 body{
     font-family: 'Hind';
@@ -20,9 +21,33 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin:0;
 }
 
+.footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: -20px;
+    padding: 1rem;
+    background-color: #9e9d9d;
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+    font-family: 'Hind';
+    font-size: 10px;
+  }
+
+
+  .botoninicio{
+      margin-left: 500px;
+  }
+
+  .botoninicio:hover{
+      color: white;
+  }
 .fila{
+    margin-left: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -206,6 +231,111 @@ p{
     font-size: 18px;
 }
 
+/*****ESTILO PERFILES*****/
+#perfiles{
+    margin-bottom: 100px;
+}
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 350px;
+}
+
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back{
+    background-image: url(/Tareas/imgs/bg1.jpg);
+}
+
+.card:nth-of-type(2) .img__back{
+    background-image: url(/Tareas/imgs/bg2.jpg);
+}
+
+.card:nth-of-type(3) .img__back{
+    background-image: url(/Tareas/imgs/bg3.jpg);
+}
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+}
+
+.card .description p{
+    margin-top: 10px;
+}
+
+.card .description input{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: var(--interactive);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card .description input:hover{
+    background: #334fb4;
+}
+
+
+.botonleermas:hover{
+    background-color: var(--interactive);
+    color: white;
+}
 
 fieldset, label { margin: 0px; padding-left: 0px; }
 
@@ -247,5 +377,4 @@ fieldset, label { margin: 0px; padding-left: 0px; }
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #587af3;  } 
 
-/*DONUT*/
 

@@ -88,6 +88,8 @@ body{
     transform: perspective(500px) rotateY(180deg);
 }
 
+
+
 .carta:hover .front{
     transform: perspective(500px) rotateY(180deg);
 }
