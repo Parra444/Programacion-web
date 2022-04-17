@@ -14,6 +14,8 @@ a{
     color: black;
 }
 body{
+    min-width: 375px;
+    max-width: 1920px;
     font-family: 'Hind';
     background-color: var(--slate-gray);
     background: url(/Tareas/imgs/backgroundcatalogo.jpg);
@@ -25,10 +27,12 @@ body{
 }
 
 .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
     right: 0;
     bottom: 0;
-    left: -20px;
     padding: 1rem;
     background-color: #9e9d9d;
     text-align: center;
@@ -40,14 +44,13 @@ body{
 
 
   .botoninicio{
-      margin-left: 500px;
+      padding-left: 20px;
   }
 
   .botoninicio:hover{
       color: white;
   }
 .fila{
-    margin-left: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -55,7 +58,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.imgcurso{
+    width: 100%;
+}
 .filastart{
     width: 100%;
     display: flex;
@@ -69,6 +74,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     height: 100px;
     align-items: center;
     font-size: 24px;
@@ -76,7 +82,8 @@ body{
     justify-content: flex-end;
 }
 .opcion{
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .marcanav{
     display: flex;
@@ -118,16 +125,17 @@ body{
 }
 .grafico{
     text-align: center;
-    width: 30%;
+    width: 380px;
     padding: 50px;
     
 }
 .videocurso{
-    width: 33%;
-    padding: 50px;
+    width: 380px;
+    padding: 20px;
 }
 .descripcion{
-    width: 23%;
+    margin: 10px;
+    width: 410px;
 }
 img{
     border-radius: 10px;
@@ -135,7 +143,7 @@ img{
 }
 
 .imggrafico{
-    width: 300px;
+    width: 100%;
 }
 
 .calificacion{
