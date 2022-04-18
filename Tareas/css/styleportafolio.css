@@ -28,7 +28,6 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(28, 15, 19,1)), url(/Tareas/imgs/background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     padding-bottom: 20px;
 }
