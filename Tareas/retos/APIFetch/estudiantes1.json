@@ -1,0 +1,18 @@
+[{
+    "estudiantes":{
+        "alumno": {
+            "cedula": "12345",
+            "nombre": "El Jesu",
+            "asignaturas": "",
+            "programa": "Ingeniería informática",
+            "foto": "aquí va url"
+        },
+        "alumno1":{
+            "cedula": "12345",
+            "nombre": "El Jesu",
+            "asignaturas": "",
+            "programa": "Ingeniería informática",
+            "foto": "aquí va url"
+        }
+    }
+}]
